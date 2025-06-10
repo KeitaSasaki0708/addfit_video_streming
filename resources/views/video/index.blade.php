@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ADDFIT-AI</title>
 
+    <style>
+        .logo-shadow {
+            filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+        }
+    </style>
+
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
@@ -19,7 +25,7 @@
         </div>
 
         <img src="{{ asset('images/logo/logo-no-background.png') }}" alt="Logo"
-            class="absolute right-5 top-5 w-12 md:w-16 drop-shadow-[0_0_10px_rgba(255,255,255,0.5)] z-10">
+            class="absolute right-5 top-5 w-12 md:w-16 logo-shadow z-10">
 
         <div
             class="relative w-[90vw] max-w-[1200px] aspect-video bg-black rounded-2xl shadow-2xl overflow-hidden flex items-center justify-center">
